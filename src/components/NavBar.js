@@ -1,25 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Segment } from "semantic-ui-react";
+import { Button, Segment, Icon } from "semantic-ui-react";
 
+const loginButtonStyle = { 
+marginLeft: `auto`,
+marginRight: `3px`,
+marginTop: `3px`,
+marginBottom: `auto`
 
-function NavBar () {
+}
+
+const buttonStyle = {
+    marginBottom: `auto`,
+    marginTop: `auto`,
+    marginLeft: `auto`,
+    marginRight: `auto`
+
+}
+
+function NavBar ({isLoggedIn}) {
     return (
-    <div class="ui inverted top fixed menu">
-        <Segment inverted>
-        <Button inverted color='red' as={Link} to='/'>
+    <div className="ui top fixed menu">
+        
+        <Button className="ui red button" as={Link} to='/' style={buttonStyle}>
             Home
         </Button>
-        <Button inverted color='red' as={Link} to='/about'>
-            About
-        </Button>
-        <Button inverted color='red' as={Link} to='/admin'>
-            Admin
-        </Button>
-        <Button inverted color='red' as={Link} to='/menu'>
+        <Button className="ui red button" as={Link} to='/menu' style={buttonStyle}>
             Menu
         </Button>
-        </Segment>
+        <Button className="ui red button" as={Link} to='/about' style={buttonStyle}>
+            About
+        </Button>
+        <Button className="ui tiny icon button" as={Link} to='/admin' color={isLoggedIn? `green` : `grey` } style={loginButtonStyle}>
+            <Icon className="ui user icon"></Icon>
+        </Button>
     </div>
     );
 }

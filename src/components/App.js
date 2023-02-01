@@ -11,24 +11,24 @@ function App() {
   
   return (
     <div className="App">
-     <NavBar setLogin={setIsLoggedIn} />
+     <NavBar isLoggedIn={isLoggedIn} setLogin={setIsLoggedIn} />
      <Routes>
       
-      <Route exact path="/about" element={
+      <Route path="about" element={
       <About />
-      }/>
+      }></Route>
       
-      <Route exact path="/admin" element={
+      <Route  path="admin" element={
       <Admin isLoggedIn={isLoggedIn} setLogin={setIsLoggedIn} />
-      }/>
+      }></Route>
       
-      <Route exact path="/menu" element={
+      <Route path="menu" element={
       <Menu />
-      }/>
+      }></Route>
       
       <Route exact path="/" element={
       <Home />
-      }/>
+      }></Route>
     
     </Routes>
     </div>
