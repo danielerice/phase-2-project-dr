@@ -20,15 +20,15 @@ const buttonStyle = {
 
 function NavBar ({isLoggedIn}) {
     return (
-    <div className="ui top fixed menu">
+    <div className="ui inverted top fixed menu">
         
-        <Button className="ui red button" as={Link} to='/' style={buttonStyle}>
+        <Button className="ui inverted red button" as={Link} to='/' style={buttonStyle}>
             Home
         </Button>
-        <Button className="ui red button" as={Link} to='/menu' style={buttonStyle}>
+        <Button className="ui inverted red button" as={Link} to='/menu' style={buttonStyle}>
             Menu
         </Button>
-        <Button className="ui red button" as={Link} to='/about' style={buttonStyle}>
+        <Button className="ui inverted red button" as={Link} to='/about' style={buttonStyle}>
             About
         </Button>
         <Button className="ui tiny icon button" as={Link} to='/admin' color={isLoggedIn? `green` : `grey` } style={loginButtonStyle}>
