@@ -7,7 +7,7 @@ import About from "./About";
 import Menu from "./Menu";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   
   return (
     <div className="App">
