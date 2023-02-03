@@ -1,0 +1,48 @@
+{
+  "kaizen": [
+    {
+      "id": 1,
+      "title": "Chef"
+    }
+  ],
+  "Events": [
+    {
+      "id": 1,
+      "title": "New Years",
+      "description": "Noodles For New Years!!! Free Drinks",
+      "start": "23:00",
+      "end": "00:00",
+      "date": "2023-12-31"
+    },
+    {
+      "id": 2,
+      "title": "Daniel's B-Day!",
+      "description": "WOOT WOOT",
+      "start": "17:00",
+      "end": "00:00",
+      "date": "2023-11-14"
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "username": "Daniel",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "username": "Bri",
+      "password": "IsCool"
+    },
+    {
+      "id": 3,
+      "username": "Noah",
+      "password": "MTGRocks"
+    },
+    {
+      "id": 4,
+      "username": "Erin",
+      "password": "YoureFired"
+    }
+  ]
+}
